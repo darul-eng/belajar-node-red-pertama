@@ -1,0 +1,722 @@
+[
+    {
+        "id": "e0b0f3b49dbf8427",
+        "type": "tab",
+        "label": "AirPloutionAPI's",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "db984f9e9bfe08a2",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "5b26835126990010",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1905b242504b0b50",
+        "type": "ui_group",
+        "name": "AirPolution",
+        "tab": "ca951f2a5a4af438",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ebc48d5b22b52628",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6bba3d886efbc09a",
+        "type": "ui_tab",
+        "name": "AREA-1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e221c501468d7f9f",
+        "type": "ui_tab",
+        "name": "AREA-2",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "deae3ad97c8ee351",
+        "type": "ui_group",
+        "name": "NODE-1",
+        "tab": "6bba3d886efbc09a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ac0de366c868568",
+        "type": "ui_group",
+        "name": "NODE-1",
+        "tab": "e221c501468d7f9f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4006c9d82f08116d",
+        "type": "ui_group",
+        "name": "NODE-2",
+        "tab": "6bba3d886efbc09a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4fb573539ef47d2d",
+        "type": "ui_group",
+        "name": "NODE-3",
+        "tab": "6bba3d886efbc09a",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa53567d031066ea",
+        "type": "ui_group",
+        "name": "NODE-4",
+        "tab": "6bba3d886efbc09a",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "81f93e50fedc0765",
+        "type": "ui_group",
+        "name": "weather",
+        "tab": "ca951f2a5a4af438",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ca951f2a5a4af438",
+        "type": "ui_tab",
+        "name": "Weather",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2d84e553e6a6f006",
+        "type": "ui_group",
+        "name": "Suhu",
+        "tab": "ca951f2a5a4af438",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2835e976.d07ea6",
+        "type": "pac-device",
+        "address": "restpac.groov.com",
+        "protocol": "http"
+    },
+    {
+        "id": "0444705cdf7eb5fa",
+        "type": "inject",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "2145b3f9427f0c67"
+            ]
+        ]
+    },
+    {
+        "id": "2145b3f9427f0c67",
+        "type": "http request",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "api.openweathermap.org/data/2.5/weather?lat=-5.132984637519176&lon=119.48842992598962&appid=8f8f13e144279699777c5a2425061d35&lang=id&units=metric",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "744d570fd952d17d",
+                "425f0c07f7fd2aa5",
+                "e6fe80a581c5819e",
+                "7aea5dac9ef25ca7",
+                "a0936a3fa6e63a50",
+                "20875a12449cef06"
+            ]
+        ]
+    },
+    {
+        "id": "744d570fd952d17d",
+        "type": "debug",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "425f0c07f7fd2aa5",
+        "type": "switch",
+        "z": "e0b0f3b49dbf8427",
+        "name": "kondisiNO2",
+        "property": "payload.list[0].components.no2",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "400",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "100",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "50",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "8f8041b36c68b37c"
+            ],
+            [
+                "8f8041b36c68b37c"
+            ],
+            [
+                "8f8041b36c68b37c"
+            ],
+            [
+                "8f8041b36c68b37c"
+            ],
+            [
+                "8f8041b36c68b37c"
+            ]
+        ],
+        "outputLabels": [
+            "very poor",
+            "poor",
+            "moderate",
+            "fair",
+            "good"
+        ]
+    },
+    {
+        "id": "e6fe80a581c5819e",
+        "type": "switch",
+        "z": "e0b0f3b49dbf8427",
+        "name": "kondisiPM10",
+        "property": "payload.list[0].components.pm10",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "180",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "90",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "50",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "25",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "0ce7200adca18864"
+            ],
+            [
+                "0ce7200adca18864"
+            ],
+            [
+                "0ce7200adca18864"
+            ],
+            [
+                "0ce7200adca18864"
+            ],
+            [
+                "0ce7200adca18864"
+            ]
+        ],
+        "outputLabels": [
+            "very poor",
+            "poor",
+            "moderate",
+            "fair",
+            "good"
+        ]
+    },
+    {
+        "id": "7aea5dac9ef25ca7",
+        "type": "switch",
+        "z": "e0b0f3b49dbf8427",
+        "name": "kondisiO3",
+        "property": "payload.list[0].components.o3",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "240",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "180",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "120",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "60",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 540,
+        "y": 560,
+        "wires": [
+            [
+                "57874bb278c8810d"
+            ],
+            [
+                "57874bb278c8810d"
+            ],
+            [
+                "57874bb278c8810d"
+            ],
+            [
+                "57874bb278c8810d"
+            ],
+            [
+                "57874bb278c8810d"
+            ]
+        ],
+        "outputLabels": [
+            "very poor",
+            "poor",
+            "moderate",
+            "fair",
+            "good"
+        ]
+    },
+    {
+        "id": "a0936a3fa6e63a50",
+        "type": "switch",
+        "z": "e0b0f3b49dbf8427",
+        "name": "kondisiPM25",
+        "property": "payload.list[0].components.pm2_5",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "110",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "55",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "30",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "15",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 550,
+        "y": 660,
+        "wires": [
+            [
+                "08f2b7f8f74fa80f"
+            ],
+            [
+                "08f2b7f8f74fa80f"
+            ],
+            [
+                "08f2b7f8f74fa80f"
+            ],
+            [
+                "08f2b7f8f74fa80f"
+            ],
+            [
+                "08f2b7f8f74fa80f"
+            ]
+        ],
+        "outputLabels": [
+            "very poor",
+            "poor",
+            "moderate",
+            "fair",
+            "good"
+        ]
+    },
+    {
+        "id": "8f8041b36c68b37c",
+        "type": "debug",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "0ce7200adca18864",
+        "type": "debug",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "57874bb278c8810d",
+        "type": "debug",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "08f2b7f8f74fa80f",
+        "type": "debug",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "20875a12449cef06",
+        "type": "function",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "func": "// let no2 = msg.payload.list[0].components.no2;\n// let pm10 = msg.payload.list[0].components.pm10;\n// let o3 = msg.payload.list[0].components.o3;\n// let pm25 = msg.payload.list[0].components.pm2_5;\n\nlet no2 = 401;\nlet pm10 = 200;\nlet o3 = 250;\nlet pm25 = 120;\n\nif(no2 > 400 && pm10 > 190 && o3 > 240 && pm25 > 110){\n    msg.payload.condition = 'Very Poor';\n}else if (no2 >= 200 && pm10 >= 90 && o3 >= 180 && pm25 >= 55){\n    msg.payload.condition = 'Poor';\n}else if (no2 >= 100 && pm10 >= 50 && o3 >= 120 && pm25 >= 30){\n    msg.payload.condition = 'Moderate';\n}else if (no2 >= 50 && pm10 >= 25 && o3 >= 60 && pm25 >= 15){\n    msg.payload.condition = 'Fair';\n}else{\n    msg.payload.condition = 'Good'\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 60,
+        "wires": [
+            [
+                "041a932fea7e5b38",
+                "6b69f66186ac9199",
+                "839823e4b1666c67"
+            ]
+        ]
+    },
+    {
+        "id": "041a932fea7e5b38",
+        "type": "debug",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6b69f66186ac9199",
+        "type": "ui_audio",
+        "z": "e0b0f3b49dbf8427",
+        "name": "",
+        "group": "1905b242504b0b50",
+        "voice": "Google US English",
+        "always": "",
+        "x": 980,
+        "y": 140,
+        "wires": [],
+        "inputLabels": [
+            "{{payload.condition}}"
+        ]
+    },
+    {
+        "id": "839823e4b1666c67",
+        "type": "ui_text",
+        "z": "e0b0f3b49dbf8427",
+        "group": "1905b242504b0b50",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Condition",
+        "format": "{{msg.payload.condition}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 990,
+        "y": 200,
+        "wires": []
+    }
+]
